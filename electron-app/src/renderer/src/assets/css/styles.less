@@ -1,0 +1,142 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Open Sans', sans-serif;
+  color: #86a5b1;
+  background-color: #2f3241;
+  height:100%;
+}
+
+main{
+  margin-top: 100px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+code {
+  font-weight: 600;
+  padding: 3px 5px;
+  border-radius: 2px;
+  background-color: #26282e;
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+  font-size: 85%;
+}
+
+button{
+  height: 40px;
+  background-color: #86a5b1;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  padding: 0px 20px;
+  cursor: pointer;
+}
+
+input, select{
+  height: 40px;
+  border:none;
+  padding: 0 5px;
+  margin-top:10px;
+  &:focus-visible{
+    outline: none;
+  }
+}
+
+input[type='radio']{
+  height: 10px;
+  margin: 0;
+  visibility: hidden;
+}
+
+input[type='radio']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: 2px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: 2px;
+  left: -1px;
+  position: relative;
+  background-color: #86a5b1;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+a {
+  color: #9feaf9;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 840px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 15px 30px 0 30px;
+}
+
+.ml-2{
+  margin-left: 10px;
+}
+
+.mt-2{
+  margin-top:10px;
+}
+
+.mb-2{
+  margin-bottom: 10px;
+}
+
+.mr-2{
+  margin-right: 10px;
+}
+
+.flex{
+  display: flex;
+}
+
+.justify-center{
+  display: flex;
+  justify-content: center;
+}
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+
+.items-center{
+  display: flex;
+  align-items: center;
+}
